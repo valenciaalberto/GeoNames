@@ -1,0 +1,41 @@
+.header{
+    padding: 25px 0px 20px 0px;
+    border-bottom: 1px solid #e5e5e5;
+    background: #399dff; 
+    color: white;
+}
+.cBody {
+    padding-top: 30px;
+    padding-bottom: 25px;
+}
+
+.alagin-P {
+    text-align: left;
+}
+p {
+    padding-top: 0px;
+}
+.card-width{
+    width: 5rem;
+}
+.footer-style{
+    border-top: 1px solid #e5e5e5;
+}
+#map {
+    height: 400px;  /* The height is 400 pixels */
+    width: 100%;  /* The width is the width of the web page */
+}
+.errMsg {
+    color: red;
+}
+.msgPadding {
+    margin-bottom: 10px;
+}
+.text-muted-white{
+    color: #ced1d3!important;
+}
+@media (max-width: 780px){
+    .alagin-P {
+        text-align: center;
+    }
+}

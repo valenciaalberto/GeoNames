@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://getbootstrap.com/docs/4.3/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <link rel="stylesheet" type="text/css" href="https://getbootstrap.com/docs/4.3/assets/css/docs.min.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        
+    </style>
+
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+
+    <div class="header clearfix">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6"> 
+                    <h3 class="text-muted-white">Jose A Valencia</h3>
+                    <p class="alagin-P" align="center"> Project developed using Html, Css, Javascript, Jquery, Boostrap & Ajax</p>
+                    <p>APIs used: <a class="text-secondary" href="http://www.geonames.org">GeoNames</a> & <a class="text-secondary" href="https://developers.google.com">Google Maps Platform</a> </p>
+                </div>
+                <div class="col-sm-6" align="center"> <img class="card card-width" style="" src="foto.jpg"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="cBody container">
+        <div class="shadow jumbotron">
+            <h1>Coding Assignment - JavaScript</h1>
+            <p>Type in the textbox below to start searching!</p>
+            <input type="text" class="msgPadding" name="searchPlace" id="searchPlace" placeholder="Search place here.."/>
+            <div Id="msgErr" class="errMsg msgPadding"></div>
+            <div id="map"></div>
+            <!--<p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+            <p><a class="btn btn-lg btn-success" href="#" role="button">Sign up today</a></p>-->
+        </div>
+        <!--<div class="shadow  d-flex p-2">-->
+        <div class="shadow p-4">
+            <h3 class="text-muted msgPadding">Top 10 largest earthquakes</h3>
+            <table class="table" >
+              <thead align="center">
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Magnitude</th>
+                  <th scope="col">Latitude</th>
+                  <th scope="col">Longitude</th>
+                  <th scope="col">Depth</th>
+                  <th scope="col">Date</th>
+                </tr>
+              </thead>
+              <tbody align="center" class="bd-highlight" id="setBodyT">
+                
+              </tbody>
+            </table>
+        </div>
+    </div>
+
+    <footer class="container footer-style" align="center">
+        <p>© Copyright</p>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBpDQP1wddfvaev8aP2aH7g2_t16OiB13s&libraries=places&callback=initMap">
+    </script>
+  </body>
+</html>
