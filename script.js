@@ -177,8 +177,18 @@ function getDate(){
 
 //////////////////Custom function for sorting data depending on magnitude
 function sortErq(erqPlaces){
+  var dateObjYr = new Date().getUTCFullYear();
+  var dateObjMt = new Date().getUTCMonth()+1;
+  var aux;
   erqPlaces.earthquakes.forEach(function(place){
-    tempErq.push(place);
+    ////////////Sorting places by date in the past 12 months
+    aux = new Date(place.datetime).getUTCFullYear(); 
+    auxMt = new Date(place.datetime).getUTCMonth()+1; 
+    if (parseInt(dateObjYr) - 1 <= parseInt(aux)) {
+      if (parseInt(dateObjMt) <= parseInt(auxMt)) {
+        tempErq.push(place);
+      }
+    }
   });
   tempErq.sort(function(a, b){return b.magnitude-a.magnitude});
  }
